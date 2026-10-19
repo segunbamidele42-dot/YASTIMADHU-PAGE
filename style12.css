@@ -1,0 +1,278 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefef;
+  color: #2f2f2f;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+::-moz-selection {
+  background-color: #2788ce;
+  color: white;
+}
+
+::selection {
+  background-color: #2788ce;
+  color: white;
+}
+
+h1 {
+  font-size: 25.5px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 19.5px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.img {
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  text-align: center;
+  padding: 30px 0 21px 0;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+}
+
+.btn button {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  margin: 20px 0;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-color: #2fa1f4;
+  border: none;
+  cursor: pointer;
+  -webkit-animation: scaling 2s infinite alternate;
+  animation: scaling 2s infinite alternate;
+  overflow: hidden;
+}
+
+.btn button span {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.btn button:hover {
+  background-color: #1e6da5;
+}
+
+.btn button:active {
+  background-color: #2fa1f4;
+}
+
+.btn button span {
+  color: #ffffff;
+}
+
+.btn button:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(rgba(255, 255, 255, 0.4)),
+    to(transparent)
+  );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: shine 2s ease-in-out infinite;
+  animation: shine 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.container .head {
+  background-color: #e9e9e9;
+  margin: 22px 0;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .head h5 {
+  text-align: center;
+  padding: 1;
+  padding: 2px 0;
+  font-weight: 400;
+}
+
+.container section {
+  -webkit-box-shadow: #0000003d 0px 3px 8px;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+.container section > div {
+  background-color: #ffffff;
+  padding: 21px 15px 6px;
+}
+
+.container section > div > div:nth-child(1) {
+  max-width: 600px;
+  margin: auto;
+}
+
+.container section > div > div:nth-child(1) h1 {
+  margin: 1rem 0;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+.container section > div > div:nth-child(1) .img {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.container section > div > div:nth-child(2) .date h2 {
+  color: #2fa1f4;
+}
+
+.container section > div > div:nth-child(2) .date h3 {
+  margin: 7px 0;
+  font-weight: 400;
+}
+
+.container section > div > div:nth-child(2) .date h3 span {
+  font-style: italic;
+}
+
+.container section > div > div:nth-child(2) > div:nth-child(2) .vid-link {
+  text-decoration: none;
+  color: #2fa1f4;
+}
+
+.container section > div > div:nth-child(2) > div:nth-child(2) p {
+  margin: 25px 0;
+}
+
+footer > div {
+  padding: 10px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+footer > div p {
+  font-size: 12px;
+  margin: 20px 0;
+  color: #6b6b6b;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .btn {
+    width: 50%;
+    max-width: 400px;
+  }
+  .btn a button {
+    padding: 20px;
+  }
+  .btn a button span {
+    font-size: 25px;
+  }
+  .container section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  .container section > div > div:nth-child(1) {
+    max-width: unset;
+  }
+  .container section > div > div:nth-child(1) h1 {
+    width: 100%;
+  }
+  .container section > div > div:nth-child(1) .img {
+    margin: 40px auto;
+  }
+  .container section > div > div:nth-child(2) {
+    max-width: 890px;
+    margin: auto;
+  }
+  footer > div p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style1.css.map */
